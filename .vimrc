@@ -9,9 +9,15 @@ filetype plugin indent on
 " Cool colorscheme
 ":colorscheme 256-jungle
 ":colorscheme matrix
-:colorscheme Mustang
+":colorscheme Mustang
 ":colorscheme molokai
 ":colorscheme ir_black
+
+"set background=light
+set background=dark
+:colorscheme solarized
+":colorscheme ironman
+":colorscheme PaperColor 
 
 " Needed for Syntax Highlighting and stuff
 filetype on
@@ -122,3 +128,11 @@ vmap <F2> <Plug>RStart
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let  R_pdfviewer = "evince"
+
+" " Set up powerline
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+" " set  rtp+=/usr/lib/python3/dist-packages/powerline/bindings/vim/
+" " set laststatus=2
+" " set t_Co=256
